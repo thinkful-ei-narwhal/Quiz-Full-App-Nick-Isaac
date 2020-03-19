@@ -7,3 +7,86 @@
   * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
   *
 */
+
+/* TODO: MAKE THIS MOBILE FIRST */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: blue;
+  color: black;
+  text-align: center;
+}
+
+.score {
+  display: none;
+}
+
+header {
+  margin-top: 50px;  
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+button, input[type=submit] {
+  margin-top: 50px;
+  font-size: 50px;
+  width: 350px;
+  border-radius: 50px;
+  background-color: darkblue;
+  color: white;
+  box-shadow: 10px 12px 13px 0 rgba(0,0,0,1);
+}
+
+.radio-buttons {
+    float: left;
+    clear: none;
+}
+
+label {
+  float: left;
+  clear: none;
+  display: block;
+  padding: 0px 1em 0px 8px;
+}
+
+input[type=radio],
+input.radio {
+  float: left;
+  clear: none;
+  margin: 12px 0 0 10px;
+}
+
+.question {
+  margin-top: 50px;
+}
+
+p {
+  margin-top: 50px;
+  font-size: 40px;
+}
+
+form {
+  margin: auto;
+  border: black 3px solid;
+  width: 80%;
+  font-size: 30px;
+  text-align: left;
+  padding: 20px 20px 20px 20px;
+  overflow: hidden;
+}
