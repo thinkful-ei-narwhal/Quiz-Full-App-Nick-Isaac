@@ -1,4 +1,3 @@
-  
 /* Your styles should be mobile-first and responsive */
 
 /** 
@@ -11,78 +10,199 @@
 /* TODO: MAKE THIS MOBILE FIRST */
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  background-color: blue;
-  color: black;
-  text-align: center;
+	color: black;
+	text-align: center;
+	background-color: #f0ecec;
 }
 
-header {
-  margin-top: 50px;  
+.head {
+	height: 50vh;
+	background-color: blue;
+	clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
 }
 
+.result,
+.top {
+	background-color: blue;
+	border-radius: 1rem;
+}
+
+.top {
+	height: 30vh;
+	margin-top: -3.1rem;
+	padding-top: 3rem;
+}
+
+.result {
+	width: 80vw;
+	margin: 20vh auto 2rem auto;
+	padding: 1rem 0 3rem;
+}
+
+.start-quiz {
+	position: fixed;
+	right: 30vw;
+	top: 34%;
+	z-index: 2;
+}
 h1 {
-  font-size: 50px;
-  margin-bottom: 50px;
+	padding: 2rem;
+	font-size: 2.2rem;
+	color: #f0ecec;
 }
 
 h2 {
-  font-size: 40px;
+	font-size: 1.8rem;
+	color: #f0ecec;
 }
 
 h3 {
-  font-size: 30px;
+	font-size: 1.5rem;
+	color: #f0ecec;
 }
 
-button, input[type=submit] {
-  margin-top: 50px;
-  font-size: 50px;
-  width: 350px;
-  border-radius: 50px;
-  background-color: darkblue;
-  color: white;
-  box-shadow: 10px 12px 13px 0 rgba(0,0,0,1);
+button,
+.submit-button {
+	font-size: 1.5rem;
+	padding: 0.5rem 2rem;
+	border-radius: 50px;
+	background-color: rgb(25, 25, 184);
+	color: white;
+	cursor: pointer;
+	box-shadow: 10px 12px 13px 0 rgba(0, 0, 0, 1);
 }
 
-.radio-buttons {
-    float: left;
-    clear: none;
+button {
+	margin: 3rem auto 3rem auto;
 }
 
-label {
-  float: left;
-  clear: none;
-  display: block;
-  padding: 0px 1em 0px 8px;
+.submit-button {
+	width: 15rem;
+	margin: 0 auto;
 }
-
-input[type=radio],
-input.radio {
-  float: left;
-  clear: none;
-  margin: 12px 0 0 10px;
-}
-
-.question {
-  margin-top: 50px;
+.question,
+.correct,
+.incorrect {
+	margin-top: 50px;
 }
 
 p {
-  margin-top: 50px;
-  font-size: 40px;
+	margin-top: 50px;
+	font-size: 2rem;
+}
+
+.ques-number {
+	padding-bottom: 5rem;
 }
 
 form {
-  margin: auto;
-  border: black 3px solid;
-  width: 80%;
-  font-size: 30px;
-  text-align: left;
-  padding: 20px 20px 20px 20px;
-  overflow: hidden;
+	margin: auto;
+	border: black 3px solid;
+	display: flex;
+	width: 80%;
+	flex-direction: column;
+	justify-content: flex-start;
+	font-size: 30px;
+	text-align: left;
+	padding: 20px 20px 20px 20px;
+}
+
+input[class='ans-correct'] {
+	border: 3px solid green;
+	width: 5em;
+}
+
+/* *************************
+			Radio Buttons
+******************************/
+/* Customize the label (the input-label) */
+.input-label {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 0;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.input-label input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+/* Create a custom radio button */
+.marked {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+	border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.input-label:hover input ~ .marked {
+	background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.input-label input:checked ~ .marked {
+	background-color: #2196f3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.marked:after {
+	content: '';
+	position: absolute;
+	display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.input-label input:checked ~ .marked:after {
+	display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.input-label .marked:after {
+	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+/* ********************************
+          Media Query
+**************************************/
+@media (min-width: 700px) {
+	body {
+		font-size: 22px;
+	}
+
+	h1 {
+		margin-block-start: 0.67em;
+		margin-block-end: 0.67em;
+	}
+}
+
+@media (min-width: 1024px) {
+	body {
+		font-size: 25px;
+	}
 }
