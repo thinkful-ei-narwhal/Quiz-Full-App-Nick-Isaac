@@ -1,5 +1,5 @@
 # Quiz App project
 
 Worked as a pair:
-Isaac Elesia
+Isaac Elesia and 
 Nick Evelson
