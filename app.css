@@ -241,55 +241,14 @@ form,
 
 @media (min-width: 1024px) {
 	body {
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 	button {
-		font-size: 2.5rem;
-		padding: 1rem 5rem;
+		font-size: 1.5rem;
 		margin-top: 2rem;
 	}
 
-	.correct p,
-	.incorrect p {
-		font-size: 2rem;
-	}
-
-	.correct .top,
-	.incorrect .top {
-		font-size: 2rem;
-	}
-
 	.result {
-		width: 40%;
-		/* font-size: 2rem; */
-	}
-
-	/* .result h3 {
-		font-size: 2.5rem;
-	} */
-
-	h3 {
-		font-size: 2.5rem;
-	}
-
-	.submit-button {
-		width: 30%;
-		font-size: 2.5rem;
-	}
-	form,
-	.form-box,
-	.top {
-		min-width: 5rem;
-		max-width: 70rem;
-		font-size: 2rem;
-	}
-
-	.input-label {
-		font-size: 2rem;
-	}
-	.start-quiz {
-		margin: -8rem auto 0;
-		font-size: 2.5rem;
-		padding: 1rem 5rem;
+		width: 50%;
 	}
 }
