@@ -1,1 +1,5 @@
-Boilerplate app structure for Quiz App project
+# Quiz App project
+
+Worked as a pair:
+Isaac Elesia
+Nick Evelson
